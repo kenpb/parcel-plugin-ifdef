@@ -1,0 +1,31 @@
+{
+  "name": "@kenpb/parcel-plugin-ifdef",
+  "version": "1.0.0",
+  "description": "TypeScript conditional compilation.",
+  "repository": "https://github.com/kenpb/parcel-plugin-ifdef",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "ts-asset.js"
+  ],
+  "keywords": [
+    "ifdef-loader",
+    "ifdef",
+    "typescript",
+    "parcel",
+    "parcel-bundler",
+    "conditional",
+    "compilation"
+  ],
+  "author": "Kenneth P. Barquero",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "ifdef-loader": "2.1.2",
+    "parcel-bundler": "^1.12.3"
+  }
+}
