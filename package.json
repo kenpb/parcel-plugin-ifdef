@@ -1,11 +1,12 @@
 {
   "name": "@kenpb/parcel-plugin-ifdef",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "TypeScript conditional compilation.",
   "repository": "https://github.com/kenpb/parcel-plugin-ifdef",
   "main": "index.js",
   "files": [
     "index.js",
+    "js-asset.js",
     "ts-asset.js"
   ],
   "keywords": [
