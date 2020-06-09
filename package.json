@@ -7,7 +7,8 @@
   "files": [
     "index.js",
     "js-asset.js",
-    "ts-asset.js"
+    "ts-asset.js",
+    "util.js"
   ],
   "keywords": [
     "ifdef-loader",
