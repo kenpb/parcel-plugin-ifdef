@@ -1,13 +1,14 @@
 const TypeScriptAsset = require('parcel-bundler/src/assets/TypeScriptAsset')
 const { parse } = require('ifdef-loader/preprocessor')
+const { filterVariables } = require('./util')
 
-class TsAsset extends TypeScriptAsset {
+class TsAssetIFDEF extends TypeScriptAsset {
   async pretransform() {
     // run the loader on the source
-    this.contents = parse(this.contents, { ...process.env })
+    this.contents = parse(this.contents, { ...filterVariables(process.env) })
     // continue the normal flow
     return await super.pretransform()
   }
 }
 
-module.exports = TsAsset
+module.exports = TsAssetIFDEF
